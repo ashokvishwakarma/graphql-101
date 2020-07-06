@@ -1,0 +1,18 @@
+[{
+  "id": 1,
+  "name": "Ashok",
+  "age": 31,
+  "email": "ashok@gmail.com",
+  "posts": [
+    "/post/1",
+    "/post/2"
+  ]
+}, {
+  "id": 2,
+  "name": "Parinita",
+  "age": 30,
+  "email": "parinita@gmail.com",
+  "posts": [
+    "/post/3"
+  ]
+}]

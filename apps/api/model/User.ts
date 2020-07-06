@@ -1,7 +1,7 @@
-import * as users from './users.json';
+import * as users from '../data/users.json';
 
 export class User {
-  static get(id: string) {
+  static get(id: any) {
     const _index: number = users.findIndex((u: any) => u.id == id);
 
     if(_index !== -1) {
