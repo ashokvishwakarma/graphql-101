@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "target": "es6",
+    "noImplicitAny": false,
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "outDir": "build/api",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "lib": [ "es2016" ]
+  },
+  "include": [
+    "./index.ts",
+  ],
+  "exclude": [
+    "../../node_modules/**/*"
+  ]
+}

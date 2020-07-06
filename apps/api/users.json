@@ -1,0 +1,46 @@
+[{
+  "id": 1,
+  "name": "Ashok",
+  "age": 31,
+  "email": "ashok@gmail.com",
+  "friends": [
+    "/user/2",
+    "/user/3"
+  ] 
+}, {
+  "id": 2,
+  "name": "Parinita",
+  "age": 30,
+  "email": "parinita@gmail.com",
+  "friends": [
+    "/user/1",
+    "/user/3"
+  ] 
+}, {
+  "id": 3,
+  "name": "Keshav",
+  "age": 28,
+  "email": "keshav@gmail.com",
+  "friends": [
+    "/user/1",
+    "/user/4"
+  ] 
+}, {
+  "id": 4,
+  "name": "Anamika",
+  "age": 26,
+  "email": "anamika@gmail.com",
+  "friends": [
+    "/user/2",
+    "/user/3"
+  ] 
+}, {
+  "id": 5,
+  "name": "Ramesh",
+  "age": 28,
+  "email": "ramesh@gmail.com",
+  "friends": [
+    "/user/1",
+    "/user/2"
+  ]
+}]
