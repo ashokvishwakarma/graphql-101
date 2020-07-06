@@ -1,0 +1,143 @@
+@import './vairables';
+@import "./grid";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Product Sans', sans-serif;
+  list-style: none;
+}
+
+body {
+  background-color: $black;
+  color: $off-white;
+}
+
+@include grid();
+
+.color-green {
+  color: $green;
+}
+
+.color-white {
+  color: $white;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  transition: opacity 0.3s linear;
+}
+
+.nav {
+  padding: 46px 0;
+
+  ul {
+    width: 100%;
+    li {
+      display: inline-block;
+      margin-right: 12px;
+
+      a {
+        color: $off-white;
+        text-decoration: none;
+      }
+
+      &.active {
+        a {
+          color: $green;
+        }
+      }
+    }
+  }
+}
+
+.page {
+  .title {
+    margin: 24px 0;
+
+    h1 {
+      color: $green;
+      margin-bottom: 12px;
+    }
+  }
+
+  .data {
+    margin-top: 46px;
+
+    .item {
+      border: 1px solid rgba($off-white, 0.1);
+      border-radius: 10px;
+      padding: 24px;
+      height: 100%;
+
+      h2 {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+.shim-bg {
+  background: #2f3d32;
+  background-image: linear-gradient(
+    to right,
+    #2f3d32 0%,
+    #3f5b41 20%,
+    #2f3d32 40%,
+    #2f3d32 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 800px 350px;
+  display: inline-block;
+  position: relative;
+
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: shimmer;
+  animation-timing-function: linear;
+
+  @keyframes shimmer {
+    0% {
+      background-position: -468px 0;
+    }
+
+    100% {
+      background-position: 468px 0;
+    }
+  }
+}
+
+.shimmer {
+  .line {
+    width: 100%;
+    height: 14px;
+    border-radius: 8px;
+
+    &.half {
+      width: 50%;
+    }
+
+    &.two-third {
+      width: 75%;
+    }
+
+    &.fat {
+      height: 24px;
+      border-radius: 16px;
+    }
+  }
+
+  .spacer {
+    height: 16px;
+  }
+}
