@@ -20,9 +20,12 @@
   },
   "homepage": "https://github.com/ashokvishwakarma/graphql-101#readme",
   "dependencies": {
+    "@apollo/react-hooks": "^3.1.5",
     "@koa/cors": "^3.1.0",
     "@koa/router": "^9.3.1",
+    "apollo-boost": "^0.4.9",
     "apollo-server-koa": "^2.15.1",
+    "graphql": "^15.3.0",
     "hookrouter": "^1.2.3",
     "koa": "^2.13.0",
     "koa-helmet": "^5.2.0",
